@@ -1,3 +1,3 @@
 # ReadFileLib
-## Description
-TCL read file scripts
+## ReadCSVtoList
+* A proc to Read .csv file to list

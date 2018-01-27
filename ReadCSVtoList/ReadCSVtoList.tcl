@@ -7,7 +7,7 @@
 proc ReadCSVtoList {f_in start_line elem_num} {
     #arg f_in:input file path, eg. "C:/Working/config.csv"
     #arg start_line: the line num to start reading from, first line is 1
-    #art elem_num: number of elements in each line
+    #arg elem_num: number of elements in each line
     #output return a list
 	set file_in [open $f_in r];
 	set temp [read $file_in];

@@ -91,7 +91,11 @@ proc ::ReadCSV::CheckElemNum {line elem_num} {
 # ::ReadCSV::toArray
 # Read csv to Array
 # arguments:
-#	
+#	myArray: variable to store content
+#	f_in: input file path
+#	start_line: the line number to read from
+#	elem_num: used to check element number
+#	name_index: the index of element to be used as array index
 # output:
 # 	Modified Array Variable
 proc ::ReadCSV::toArray {myArray f_in start_line elem_num name_index} {
@@ -119,7 +123,10 @@ proc ::ReadCSV::toArray {myArray f_in start_line elem_num name_index} {
 # ::ReadCSV::toList
 # Read csv to List
 # arguments:
-#	
+#	myList: variable to store list
+#	f_in: input file path
+#	start_line: the line number to read from
+#	elem_num: used to check element number
 # output:
 # 	Modified Array Variable
 proc ::ReadCSV::toList {myList f_in start_line elem_num} {
@@ -141,5 +148,3 @@ proc ::ReadCSV::toList {myList f_in start_line elem_num} {
 		}
 	}
 }
-
-
